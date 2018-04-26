@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call startLogout on button click 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          Expensify
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+        onClick={[MockFunction]}
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`should call startLogout on button click 2`] = `
+<header
+  className="header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          Expensify
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+        onClick={
+          [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+          }
+        }
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`should render Header correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          Expensify
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+        onClick={[MockFunction]}
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+`;

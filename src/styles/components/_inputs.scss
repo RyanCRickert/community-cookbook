@@ -1,0 +1,32 @@
+.text-input {
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+}
+
+.text-input__ingredient {
+  @extend .text-input;
+  float: left;
+  width: 75%;
+}
+
+.text-input__button {
+  height: 50px;
+  font-size: 1.5rem;
+  width:25%;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 2.2rem;
+  }
+}
+
+.select {
+  @extend .text-input;
+}
+
+.text-area {
+  @extend .text-input;
+  height: 10rem;
+}
