@@ -1,18 +1,22 @@
-.header {
-  background: $dark-blue;
+.header-button {
+  margin: 2.7rem 0 0 2rem;
 }
 
-.header__content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: $s-size 0;
+.header-main {
+  display: inline-block;
+  height: 100px;
 }
 
-.header__title {
-  color: white;
-  text-decoration: none;
-  h1 {
-    margin: 0;
-  }
+.header-title {
+  font-family: "Lobster", cursive;
+  margin: 0;
+}
+
+.header-subtitle {
+  float: left;
+  margin: 0 0 2rem 2rem;
+}
+
+.header-log {
+  float: right;
 }

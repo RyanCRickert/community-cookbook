@@ -5,14 +5,24 @@
 
   @media (min-width: $desktop-breakpoint) {
     flex-direction: row;
-    margin-right: $l-size;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
-.input-group__item {
+.input-group__search {
   margin-bottom: $s-size;
 
   @media (min-width: $desktop-breakpoint) {
     margin: 0 $s-size 0 0;
+    width: 80%;
+  }
+}
+
+.input-group__select {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
   }
 }

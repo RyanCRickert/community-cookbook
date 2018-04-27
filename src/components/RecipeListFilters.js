@@ -23,7 +23,7 @@ export class RecipeListFilters extends React.Component {
     return (
       <div className="content-container">
         <div className="input-group">
-          <div className="input-group__item">
+          <div className="input-group__search">
             <input
               type="text"
               className="text-input"
@@ -32,7 +32,7 @@ export class RecipeListFilters extends React.Component {
               onChange={this.onNameChange}
             />
           </div>
-          <div className="input-group__item">
+          <div className="input-group__select">
             <select
               className="select"
               value={this.props.filters.sortBy}
