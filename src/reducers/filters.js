@@ -1,40 +1,38 @@
 import moment from "moment";
 
 const filtersReducerDefaultState = {
-    text: "",
-    sortBy: "name",
-    startDate: moment().startOf("month"),
-    endDate: moment().endOf("month")
+  name: "",
+  sortBy: "name",
 }
 
 export default (state = filtersReducerDefaultState, action) => {
-    switch (action.type) {
-        case "SET_TEXT_FILTER":
-            return {
-                ...state,
-                text: action.text
-            };
-        case "SORT_BY_DATE":
-            return {
-                ...state,
-                sortBy: "date"
-            };
-        case "SORT_BY_NAME":
-            return {
-                ...state,
-                sortBy: "name"
-            };
-        case "SET_START_DATE":
-            return {
-                ...state,
-                startDate: action.startDate
-            };
-        case "SET_END_DATE":
-            return {
-                ...state,
-                endDate: action.endDate
-            };
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case "SET_NAME_FILTER":
+      return {
+        ...state,
+        name: action.name
+      };
+    case "SORT_BY_DATE":
+      return {
+        ...state,
+        sortBy: "date"
+      };
+    case "SORT_BY_NAME":
+      return {
+        ...state,
+        sortBy: "name"
+      };
+    case "SORT_BY_COOKTIME":
+      return {
+        ...state,
+        sortBy: "cookTime"
+      }
+    case "SORT_BY_FEEDS":
+      return {
+        ...state,
+        sortBy: "feeds"
+      }
+    default:
+      return state;
+  }
 };

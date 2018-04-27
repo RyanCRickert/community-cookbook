@@ -1,6 +1,6 @@
-export const setTextFilter = (text = "") => ({
-    type: "SET_TEXT_FILTER",
-    text
+export const setNameFilter = (name = "") => ({
+    type: "SET_NAME_FILTER",
+    name
 });
 
 export const sortByName = () => ({
@@ -11,12 +11,10 @@ export const sortByDate = () => ({
     type: "SORT_BY_DATE",
 });
 
-export const setStartDate = (startDate) => ({
-    type: "SET_START_DATE",
-    startDate
+export const sortByCookTime = () => ({
+    type: "SORT_BY_COOKTIME",
 });
 
-export const setEndDate = (endDate) => ({
-    type: "SET_END_DATE",
-    endDate
+export const sortByFeeds = () => ({
+    type: "SORT_BY_FEEDS",
 });

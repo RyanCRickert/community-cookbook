@@ -1,12 +1,12 @@
 import React from "react";
+import Header from "./Header";
 import RecipeList from "./RecipeList";
 import RecipeListFilters from "./RecipeListFilters";
 import { Link } from "react-router-dom";
 
 export default () => (
-  <div>
-    <h1><Link to="/add">Community Cookbook</Link></h1>
-    <h3>A place for sharing</h3>
+  <div className="content-container">
+    <Header />
     <RecipeListFilters />
     <RecipeList />
   </div>

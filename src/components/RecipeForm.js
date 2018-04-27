@@ -11,6 +11,7 @@ export default class RecipeForm extends React.Component {
 			instructions: props.recipe ? props.recipe.instructions : "",
 			ingredients: props.recipe ? props.recipe.ingredients : [],
 			cookTime: props.recipe ? props.recipe.cookTime : "",
+			feeds: props.recipe ? props.recipe.feeds : "",
 			createdAt: props.recipe ? moment(props.recipe.createdAt) : moment(),
 			error: ""
 		}
@@ -24,6 +25,11 @@ export default class RecipeForm extends React.Component {
 	onCookChange = (e) => {
 		const cookTime = e.target.value;
 		this.setState(() => ({ cookTime }));
+	};
+
+	onFeedChange = (e) => {
+		const feeds = e.target.value;
+		this.setState(() => ({ feeds }));
 	};
 
 	onInstructionsChange = (e) => {
@@ -78,7 +84,8 @@ export default class RecipeForm extends React.Component {
 				ingredients: this.state.ingredients,
 				createdAt: this.state.createdAt.valueOf(),
 				instructions: this.state.instructions,
-				cookTime: this.state.cookTime
+				cookTime: this.state.cookTime,
+				feeds: this.state.feeds
 			});
 		}
 	};
@@ -101,6 +108,13 @@ export default class RecipeForm extends React.Component {
 					placeholder="Cooking Time"
 					value={this.state.cookTime}
 					onChange={this.onCookChange}
+				/>
+				<input
+					className="text-input"
+					type="text"
+					placeholder="Feeds"
+					value={this.state.feeds}
+					onChange={this.onFeedChange}
 				/>
 				<form onSubmit={this.handleAddIngredient}>
 					<input

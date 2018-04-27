@@ -3,7 +3,6 @@ import numeral from "numeral";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import selectRecipes from "../selectors/recipes";
-import selectRecipesTotal from "../selectors/recipes-total";
 
 export const RecipeSummary = ({ recipeCount, recipesTotal}) => {
   const recipeWord = recipeCount === 1 ? "recipe" : "recipes";

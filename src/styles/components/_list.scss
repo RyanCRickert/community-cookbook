@@ -56,6 +56,15 @@
   font-size: $font-size-small;
 }
 
+.list-item__sub-title-right {
+  color: $gray;
+  font-size: $font-size-small;
+
+  @media (min-width: $desktop-breakpoint) {
+    float: right;
+  }
+}
+
 .list-item__data {
   margin: $s-size 0 0 0;
 
