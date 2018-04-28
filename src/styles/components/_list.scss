@@ -16,6 +16,7 @@
 }
 
 .list-item {
+  background: beige;
   border: 1px solid darken($off-white, 10%);
   border-top: none;
   color: $dark-gray;
@@ -25,7 +26,7 @@
   text-decoration: none;
   transition: background 0.3s ease;
   &:hover {
-    background: $off-white;
+    background: darken(beige, 15%);
   }
 
   @media (min-width: $desktop-breakpoint) {

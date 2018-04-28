@@ -30,7 +30,7 @@ export default class RecipeListItem extends React.Component {
           <span className="list-item__sub-title">Date added: {moment(this.props.createdAt).format("MMMM Do YYYY")}</span>
         </div>
         <div>
-          <h3 className="list-item__data show-for-larger">{this.props.cookTime}</h3>
+          <h3 className="list-item__data show-for-larger">{this.props.cookTime} {this.props.cookTime === 1 ? "minute" : "minutes"}</h3>
           <span className="list-item__sub-title-right">Feeds: {this.props.feeds}</span>
           <h3 className="list-item__data show-for-mobile">Cooking time: {this.props.cookTime}</h3>
         </div>

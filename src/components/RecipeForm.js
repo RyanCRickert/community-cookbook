@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import { Link } from "react-router-dom";
 import IngredientListItem from "./IngredientListItem";
 
 export default class RecipeForm extends React.Component {
@@ -10,8 +11,8 @@ export default class RecipeForm extends React.Component {
 			name: props.recipe ? props.recipe.name : "",
 			instructions: props.recipe ? props.recipe.instructions : "",
 			ingredients: props.recipe ? props.recipe.ingredients : [],
-			cookTime: props.recipe ? props.recipe.cookTime : "",
-			feeds: props.recipe ? props.recipe.feeds : "",
+			cookTime: props.recipe ? props.recipe.cookTime : "1",
+			feeds: props.recipe ? props.recipe.feeds : "1",
 			createdAt: props.recipe ? moment(props.recipe.createdAt) : moment(),
 			error: ""
 		}
@@ -102,20 +103,32 @@ export default class RecipeForm extends React.Component {
 					value={this.state.name}
 					onChange={this.onNameChange}
 				/>
+				<div className="number-input">
+				<div>
+				Cook Time : 
 				<input
-					className="text-input"
-					type="text"
-					placeholder="Cooking Time"
+					className="number-input__item"
+					type="number"
+					value="1"
+					min="1"
 					value={this.state.cookTime}
 					onChange={this.onCookChange}
 				/>
+				&nbsp;{this.state.cookTime === "1" ? "minute" : "minutes"}
+				</div>
+				<div>
+				Feeds : 
 				<input
-					className="text-input"
-					type="text"
-					placeholder="Feeds"
+					className="number-input__item"
+					type="number"
+					value="1"
+					min="1"
 					value={this.state.feeds}
 					onChange={this.onFeedChange}
 				/>
+				&nbsp;{this.state.feeds === "1" ? "person" : "people"}
+				</div>
+				</div>
 				<form onSubmit={this.handleAddIngredient}>
 					<input
 						className="text-input__ingredient"
@@ -136,7 +149,7 @@ export default class RecipeForm extends React.Component {
 						/>
 					)
 					)}
-				<form className="form" onSubmit={this.onSubmit}>
+				<form onSubmit={this.onSubmit}>
 					<textarea
 						className="text-area"
 						placeholder="Cooking instructions"
@@ -147,6 +160,7 @@ export default class RecipeForm extends React.Component {
 						<button className="button">{this.props.actionType} Recipe</button>
 					</div>
 				</form>
+				<Link to="/" className="button home-button">Home</Link>
 			</div>
 		)
 	}

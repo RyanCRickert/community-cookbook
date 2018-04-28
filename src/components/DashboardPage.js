@@ -5,7 +5,7 @@ import RecipeListFilters from "./RecipeListFilters";
 import { Link } from "react-router-dom";
 
 export default () => (
-  <div className="content-container">
+  <div>
     <Header />
     <RecipeListFilters />
     <RecipeList />

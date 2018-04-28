@@ -38,7 +38,7 @@ export class Header extends React.Component {
 
   render() {
     return (
-      <header>
+      <header className="header">
         <div className="content-container">
           <div className="header-main">
             <h1 className="header-title">Community Cookbook</h1>

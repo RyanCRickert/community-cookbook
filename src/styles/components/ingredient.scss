@@ -1,8 +1,17 @@
+.ingredient-item {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .ingredient-item__left {
-  float: left;
+  padding: 0.5rem;
 }
 
 .ingredient-item__right {
+  background: burlywood;
+  border-left: 1px solid black;
   cursor: pointer;
-  float: right;
+  padding: 0.5rem;
 }

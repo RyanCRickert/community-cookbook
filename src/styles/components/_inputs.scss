@@ -1,3 +1,22 @@
+.number-input {
+  display: flex;
+
+  div:nth-child(n+2) {
+    margin-left: 1rem;
+  }
+
+  div:nth-child(n+1) {
+    border: 1px solid #cacccd;
+    padding: 0.5rem;
+  }
+}
+
+.number-input__item {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  width: 4.5rem;
+}
+
 .text-input {
   border: 1px solid #cacccd;
   height: 50px;
@@ -10,9 +29,11 @@
 .text-input__ingredient {
   @extend .text-input;
   float: left;
+  width: 75%;
 }
 
 .text-input__button {
+  background: rgb(29, 80, 29);
   height: 50px;
   font-size: 1.5rem;
   width:25%;

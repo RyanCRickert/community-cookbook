@@ -1,5 +1,5 @@
 .button {
-  background: $light-blue;
+  background: $gray;
   border: none;
   color: white;
   display: inline-block;
@@ -15,5 +15,9 @@
 }
 
 .button--secondary {
-  background: #888;
+  background: rgb(117, 0, 0);
+}
+
+.home-button {
+  width: 8rem;
 }

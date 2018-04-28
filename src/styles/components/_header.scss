@@ -1,8 +1,13 @@
+.header {
+  background: $dark-gray;
+}
+
 .header-button {
   margin: 2.7rem 0 0 2rem;
 }
 
 .header-main {
+  color: $off-white;
   display: inline-block;
   height: 100px;
 }
