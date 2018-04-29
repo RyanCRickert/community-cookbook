@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setNameFilter, sortByName, sortByCookTime, sortByDate, sortByFeeds } from "../actions/filters";
+import { setNameFilter, sortByName, sortByCookTime, sortByCategory, sortByFeeds } from "../actions/filters";
 
 export class RecipeListFilters extends React.Component {
   onNameChange = (e) => {
@@ -8,8 +8,8 @@ export class RecipeListFilters extends React.Component {
   };
 
   onSortChange = (e) => {
-    if (e.target.value === "date") {
-      this.props.sortByDate();
+    if (e.target.value === "category") {
+      this.props.sortByCategory();
     } else if (e.target.value === "cookTime") {
       this.props.sortByCookTime();
     } else if (e.target.value === "name") {
@@ -38,8 +38,8 @@ export class RecipeListFilters extends React.Component {
               value={this.props.filters.sortBy}
               onChange={this.onSortChange}
             >
+              <option value="category">Category</option>
               <option value="cookTime">Cook Time</option>
-              <option value="date">Date</option>
               <option value="name">Name</option>
               <option value="feeds">Feeds</option>
             </select>
@@ -56,7 +56,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   setNameFilter: (name) => dispatch(setNameFilter(name)),
-  sortByDate: () => dispatch(sortByDate()),
+  sortByCategory: () => dispatch(sortByCategory()),
   sortByName: () => dispatch(sortByName()),
   sortByCookTime: () => dispatch(sortByCookTime()),
   sortByFeeds: () => dispatch(sortByFeeds())

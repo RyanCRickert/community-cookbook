@@ -24,8 +24,8 @@ export class EditRecipePage extends React.Component {
           </div>
         </div>
           <div className="content-container view-page">
-            <span>Cook Time: {this.props.recipe.cookTime} {this.props.recipe.cookTime === "1" ? "minute" : "minutes"}</span><br />
-            <span>Feeds: {this.props.recipe.feeds} {this.props.recipe.feeds === "1" ? "person" : "people"}</span>
+            <span>Cook Time: {this.props.recipe.cookTime} {this.props.recipe.cookTime === 1 ? "minute" : "minutes"}</span><br />
+            <span>Feeds: {this.props.recipe.feeds} {this.props.recipe.feeds === 1 ? "person" : "people"}</span>
             <div>
               <h3>Ingredients</h3>
               <span>{this.props.recipe.ingredients.map((ingredient) => (

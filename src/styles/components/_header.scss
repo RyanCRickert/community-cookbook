@@ -4,24 +4,60 @@
 
 .header-button {
   margin: 2.7rem 0 0 2rem;
+
+  @media(max-width: 600px) {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0.8rem;
+  }
 }
 
 .header-main {
   color: $off-white;
   display: inline-block;
   height: 100px;
+
+  @media(max-width: 600px) {
+    height: 75px;
+  }
 }
 
 .header-title {
   font-family: "Lobster", cursive;
   margin: 0;
+
+  @media(max-width: 600px) {
+    font-size: 2.5rem;
+  }
 }
 
 .header-subtitle {
   float: left;
   margin: 0 0 2rem 2rem;
+
+  @media(max-width: 600px) {
+    font-size: 1.8rem;
+  }
 }
 
 .header-log {
   float: right;
+
+  @media(max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    @media(max-width: 600px) {
+      margin-top: 0.7rem;
+    }
+  }
+
+  .header-button__login {
+    @media(max-width: 600px) {
+      margin-top: 2.05rem;
+      width: 11.3rem;
+    }
+  }
 }

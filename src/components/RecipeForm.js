@@ -11,8 +11,9 @@ export default class RecipeForm extends React.Component {
 			name: props.recipe ? props.recipe.name : "",
 			instructions: props.recipe ? props.recipe.instructions : "",
 			ingredients: props.recipe ? props.recipe.ingredients : [],
-			cookTime: props.recipe ? props.recipe.cookTime : "1",
-			feeds: props.recipe ? props.recipe.feeds : "1",
+			cookTime: props.recipe ? parseInt(props.recipe.cookTime) : 1,
+			feeds: props.recipe ? parseInt(props.recipe.feeds) : 1,
+			category: props.recipe ? props.recipe.category : "",
 			createdAt: props.recipe ? moment(props.recipe.createdAt) : moment(),
 			error: ""
 		}
@@ -25,12 +26,12 @@ export default class RecipeForm extends React.Component {
 
 	onCookChange = (e) => {
 		const cookTime = e.target.value;
-		this.setState(() => ({ cookTime }));
+		this.setState(() => ({ cookTime: parseInt(cookTime) }));
 	};
 
 	onFeedChange = (e) => {
 		const feeds = e.target.value;
-		this.setState(() => ({ feeds }));
+		this.setState(() => ({ feeds: parseInt(feeds) }));
 	};
 
 	onInstructionsChange = (e) => {
@@ -43,6 +44,20 @@ export default class RecipeForm extends React.Component {
 			this.setState(() => ({ createdAt }));
 		}
 	};
+
+	onCategoryChange = (e) => {
+    if (e.target.value === "Beef") {
+      this.setState({ category: "Beef"})
+    } else if (e.target.value === "Chicken") {
+      this.setState({ category: "Chicken"})
+    } else if (e.target.value === "Other") {
+      this.setState({ category: "Other"})
+    } else if (e.target.value === "Meatless") {
+      this.setState({ category: "Meatless"})
+    } else if (e.target.value === "Pork") {
+      this.setState({ category: "Pork"})
+    }
+  };
 
 	handleRemoveIngredient = (ingredientToRemove) => {
 		this.setState((prevState) => ({
@@ -85,15 +100,17 @@ export default class RecipeForm extends React.Component {
 				ingredients: this.state.ingredients,
 				createdAt: this.state.createdAt.valueOf(),
 				instructions: this.state.instructions,
-				cookTime: this.state.cookTime,
-				feeds: this.state.feeds
+				cookTime: parseInt(this.state.cookTime),
+				feeds: parseInt(this.state.feeds),
+				category: this.state.category
 			});
 		}
 	};
 
 	render() {
+		const pStyle = {marginTop: "0"};
 		return (
-			<div className="form">
+			<div className="form-edit">
 				{this.state.error && <p className="form__error">{this.state.error}</p>}
 				<input
 					className="text-input"
@@ -105,28 +122,43 @@ export default class RecipeForm extends React.Component {
 				/>
 				<div className="number-input">
 				<div>
-				Cook Time : 
-				<input
-					className="number-input__item"
-					type="number"
-					value="1"
-					min="1"
-					value={this.state.cookTime}
-					onChange={this.onCookChange}
-				/>
-				&nbsp;{this.state.cookTime === "1" ? "minute" : "minutes"}
+					Cook Time : 
+					<input
+						className="number-input__item"
+						type="number"
+						value={1}
+						min={1}
+						value={this.state.cookTime}
+						onChange={this.onCookChange}
+					/>
+					&nbsp;{this.state.cookTime === 1 ? "minute" : "minutes"}
 				</div>
 				<div>
-				Feeds : 
-				<input
-					className="number-input__item"
-					type="number"
-					value="1"
-					min="1"
-					value={this.state.feeds}
-					onChange={this.onFeedChange}
-				/>
-				&nbsp;{this.state.feeds === "1" ? "person" : "people"}
+					Feeds : 
+					<input
+						className="number-input__item"
+						type="number"
+						value={1}
+						min={1}
+						value={this.state.feeds}
+						onChange={this.onFeedChange}
+					/>
+					&nbsp;{this.state.feeds === 1 ? "person" : "people"}
+				</div>
+				<div>
+					Category : 
+					<select
+					className="number-input__item-category"
+					value={this.state.category}
+					onChange={this.onCategoryChange}
+				>
+					<option value={null}></option>
+					<option value="Beef">Beef</option>
+					<option value="Chicken">Chicken</option>
+					<option value="Meatless">Meatless</option>
+					<option value="Other">Other</option>
+					<option value="Pork">Pork</option>
+				</select>
 				</div>
 				</div>
 				<form onSubmit={this.handleAddIngredient}>
@@ -140,7 +172,7 @@ export default class RecipeForm extends React.Component {
 					<button className="button text-input__button">Add Ingredient</button>
 				</form>
 				{this.state.ingredients.length === 0 ?
-					<p>*Please add at least one ingredient*</p> :
+					<p style={pStyle}>*Please add at least one ingredient*</p> :
 					this.state.ingredients.map((ingredient) => (
 						<IngredientListItem
 							key={ingredient}

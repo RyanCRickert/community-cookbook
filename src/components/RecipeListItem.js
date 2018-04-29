@@ -27,12 +27,12 @@ export default class RecipeListItem extends React.Component {
       <Link className="list-item" to={"/" + (this.state.loggedIn ? "edit" : "view") + "/" + this.props.id}>
         <div>
           <h3 className="list-item__title">{this.props.name}</h3>
-          <span className="list-item__sub-title">Date added: {moment(this.props.createdAt).format("MMMM Do YYYY")}</span>
+          <span className="list-item__sub-title">Category: {this.props.category}</span>
         </div>
         <div>
-          <h3 className="list-item__data show-for-larger">{this.props.cookTime} {this.props.cookTime === 1 ? "minute" : "minutes"}</h3>
-          <span className="list-item__sub-title-right">Feeds: {this.props.feeds}</span>
-          <h3 className="list-item__data show-for-mobile">Cooking time: {this.props.cookTime}</h3>
+          <h3 className="list-item__data show-for-larger">{parseInt(this.props.cookTime)} {this.props.cookTime === 1 ? "minute" : "minutes"}</h3>
+          <span className="list-item__sub-title-right">Feeds: {parseInt(this.props.feeds)}</span>
+          <h3 className="list-item__data show-for-mobile">Cooking time: {parseInt(this.props.cookTime)} {this.props.cookTime === 1 ? "minute" : "minutes"}</h3>
         </div>
       </Link>
     )

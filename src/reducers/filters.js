@@ -12,10 +12,10 @@ export default (state = filtersReducerDefaultState, action) => {
         ...state,
         name: action.name
       };
-    case "SORT_BY_DATE":
+    case "SORT_BY_CATEGORY":
       return {
         ...state,
-        sortBy: "date"
+        sortBy: "category"
       };
     case "SORT_BY_NAME":
       return {

@@ -4,6 +4,15 @@
   > * {
     margin-bottom: $m-size;
   }
+  
+  a {
+    margin-bottom: 0;
+  }
+}
+
+.form-edit {
+  @extend .form;
+  background: rgba($color: beige, $alpha: 0.8);
 }
 
 .form__error {

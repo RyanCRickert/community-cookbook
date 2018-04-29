@@ -14,10 +14,11 @@ export const startAddRecipe = (recipeData = {}) => {
       ingredients = [],
       instructions = "",
       cookTime = 0,
-      feeds =0,
+      feeds = 0,
+      category= "",
       createdAt = 0
   } = recipeData;
-    const recipe = { name, instructions, createdAt, ingredients, cookTime, feeds };
+    const recipe = { name, instructions, createdAt, ingredients, cookTime, feeds, category };
 
     return database.ref(`recipes`).push(recipe).then((ref) => {
       dispatch(addRecipe({

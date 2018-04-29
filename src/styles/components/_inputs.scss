@@ -1,5 +1,6 @@
 .number-input {
   display: flex;
+  justify-content: space-between;
 
   div:nth-child(n+2) {
     margin-left: 1rem;
@@ -9,12 +10,23 @@
     border: 1px solid #cacccd;
     padding: 0.5rem;
   }
+
+  div {
+    background: beige;
+    color: $gray;
+    font-weight: 700;
+  }
 }
 
 .number-input__item {
   margin-left: 1rem;
   padding-left: 0.5rem;
   width: 4.5rem;
+}
+
+.number-input__item-category {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .text-input {

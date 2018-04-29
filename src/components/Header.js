@@ -46,7 +46,7 @@ export class Header extends React.Component {
           </div>
             {this.state.loggedIn ?
               <div className="header-log"><Link className="button header-button" to="/add">New Recipe</Link><button className="button header-button" onClick={this.props.startLogout}>Logout</button></div> :
-              <div className="header-log"><LoginModal modalOpen={this.state.modalOpen} handleCloseModal={this.handleCloseModal}/><button className="button header-button" onClick={this.handleOpenModal}>Login</button></div>}
+              <div className="header-log"><LoginModal modalOpen={this.state.modalOpen} handleCloseModal={this.handleCloseModal}/><button className="button header-button header-button__login" onClick={this.handleOpenModal}>Login</button></div>}
         </div>
       </header>
     )

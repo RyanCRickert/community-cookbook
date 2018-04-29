@@ -1,7 +1,9 @@
 .ingredient-item {
-  border: 1px solid black;
+  background: beige;
+  color: $gray;
   display: flex;
   flex-direction: row;
+  font-weight: 700;
   justify-content: space-between;
 }
 
@@ -10,8 +12,9 @@
 }
 
 .ingredient-item__right {
-  background: burlywood;
-  border-left: 1px solid black;
+  background: darken(beige, 20%);
+  color: darken($gray, 20%);
+  border: 1px solid black;
   cursor: pointer;
   padding: 0.5rem;
 }
