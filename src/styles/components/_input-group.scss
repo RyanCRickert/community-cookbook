@@ -1,9 +1,10 @@
 .input-group {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-bottom: $m-size;
 
   @media (min-width: $desktop-breakpoint) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -20,9 +21,20 @@
 }
 
 .input-group__select {
+  height: 5rem;
   margin-bottom: $s-size;
 
   @media (min-width: $desktop-breakpoint) {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.input-group__category {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint) {
+    height: 5rem;
+    margin: 0 1.2rem 0 0;
   }
 }

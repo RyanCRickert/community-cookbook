@@ -36,3 +36,25 @@
   margin: 0 0 $l-size 0;
   word-break: break-all;
 }
+
+.modal-remove {
+  background: $dark-gray;
+  color: $off-white;
+  max-width: 60rem;
+  outline: none;
+  padding: $m-size;
+  text-align: center;
+}
+
+.modal-remove__header {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-remove__body {
+
+}
+
+.no-margin {
+  margin: 0;
+}

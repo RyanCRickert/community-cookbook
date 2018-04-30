@@ -3,12 +3,13 @@ export const setNameFilter = (name = "") => ({
     name
 });
 
-export const sortByName = () => ({
-    type: "SORT_BY_NAME",
+export const setCategoryFilter = (category = "") => ({
+    type: "SET_CATEGORY_FILTER",
+    category
 });
 
-export const sortByCategory = () => ({
-    type: "SORT_BY_CATEGORY",
+export const sortByName = () => ({
+    type: "SORT_BY_NAME",
 });
 
 export const sortByCookTime = () => ({

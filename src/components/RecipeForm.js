@@ -39,12 +39,6 @@ export default class RecipeForm extends React.Component {
 		this.setState(() => ({ instructions }));
 	};
 
-	onDateChange = (createdAt) => {
-		if (createdAt) {
-			this.setState(() => ({ createdAt }));
-		}
-	};
-
 	onCategoryChange = (e) => {
     if (e.target.value === "Beef") {
       this.setState({ category: "Beef"})
@@ -72,10 +66,10 @@ export default class RecipeForm extends React.Component {
 		let error = false;
 
 		if (!e.target.elements.ingredient.value) {
-			this.setState({ error: "Please enter a valid ingredient" });
+			this.setState({ error: "*Please enter a valid ingredient*" });
 			error = true;
 		} else if (this.state.ingredients.indexOf(ingredient) > -1) {
-			this.setState({ error: "This ingredient already exists" });
+			this.setState({ error: "*This ingredient already exists*" });
 			error = true;
 		}
 
@@ -91,8 +85,14 @@ export default class RecipeForm extends React.Component {
 	onSubmit = (e) => {
 		e.preventDefault();
 
-		if (!this.state.name || !this.state.ingredients || !this.state.cookTime) {
-			this.setState(() => ({ error: "Please enter a name, an ingredient and a cooking time." }));
+		if (!this.state.name) {
+			this.setState(() => ({ error: "Please enter a name." }));
+		} else if (!this.state.ingredients) {
+			this.setState(() => ({ error: "Please enter at least one ingredient." }));
+		}  else if (!this.state.cookTime) {
+			this.setState(() => ({ error: "Please verify the cook time." }));
+		}  else if (!this.state.feeds) {
+			this.setState(() => ({ error: "Please verify the feeds number." }));
 		} else {
 			this.setState(() => ({ error: "" }));
 			this.props.onSubmit({
@@ -147,7 +147,7 @@ export default class RecipeForm extends React.Component {
 				</div>
 				<div>
 					Category : 
-					<select
+				<select
 					className="number-input__item-category"
 					value={this.state.category}
 					onChange={this.onCategoryChange}

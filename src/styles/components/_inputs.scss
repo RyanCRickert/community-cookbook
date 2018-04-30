@@ -55,8 +55,22 @@
   }
 }
 
+.category {
+  @extend .text-input;
+  width: 12rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    float: left;
+  }
+}
+
 .select {
   @extend .text-input;
+  width: 13.5rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    float: right;
+  }
 }
 
 .text-area {

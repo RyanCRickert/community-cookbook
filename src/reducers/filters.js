@@ -3,6 +3,7 @@ import moment from "moment";
 const filtersReducerDefaultState = {
   name: "",
   sortBy: "name",
+  category: ""
 }
 
 export default (state = filtersReducerDefaultState, action) => {
@@ -12,10 +13,10 @@ export default (state = filtersReducerDefaultState, action) => {
         ...state,
         name: action.name
       };
-    case "SORT_BY_CATEGORY":
+    case "SET_CATEGORY_FILTER":
       return {
         ...state,
-        sortBy: "category"
+        category: action.category
       };
     case "SORT_BY_NAME":
       return {

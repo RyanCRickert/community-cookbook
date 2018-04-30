@@ -1,16 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setNameFilter, sortByName, sortByCookTime, sortByCategory, sortByFeeds } from "../actions/filters";
+import { setNameFilter, setCategoryFilter, sortByName, sortByCookTime, sortByCategory, sortByFeeds } from "../actions/filters";
 
 export class RecipeListFilters extends React.Component {
   onNameChange = (e) => {
     this.props.setNameFilter(e.target.value);
   };
 
+  onCategoryChange = (e) => {
+    this.props.setCategoryFilter(e.target.value);
+  };
+
   onSortChange = (e) => {
-    if (e.target.value === "category") {
-      this.props.sortByCategory();
-    } else if (e.target.value === "cookTime") {
+    if (e.target.value === "cookTime") {
       this.props.sortByCookTime();
     } else if (e.target.value === "name") {
       this.props.sortByName();
@@ -32,13 +34,26 @@ export class RecipeListFilters extends React.Component {
               onChange={this.onNameChange}
             />
           </div>
+          <div className="input-group__category">
+            <select
+              className="category"
+              value={this.props.filters.category}
+              onChange={this.onCategoryChange}
+            >
+              <option value="">All</option>
+              <option>Beef</option>
+              <option>Chicken</option>
+              <option>Meatless</option>
+              <option>Other</option>
+              <option>Pork</option>
+            </select>
+          </div>
           <div className="input-group__select">
             <select
               className="select"
               value={this.props.filters.sortBy}
               onChange={this.onSortChange}
             >
-              <option value="category">Category</option>
               <option value="cookTime">Cook Time</option>
               <option value="name">Name</option>
               <option value="feeds">Feeds</option>
@@ -56,6 +71,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   setNameFilter: (name) => dispatch(setNameFilter(name)),
+  setCategoryFilter: (category) => dispatch(setCategoryFilter(category)),
   sortByCategory: () => dispatch(sortByCategory()),
   sortByName: () => dispatch(sortByName()),
   sortByCookTime: () => dispatch(sortByCookTime()),

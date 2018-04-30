@@ -3,11 +3,15 @@
 }
 
 html {
+    background: url("/images/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-size: 62.5%;
 }
 
 body {
-    color: $off-white;
     font-family:  Helvetica, Arial, sans-serif;
     font-size: $m-size;
     line-height: 1.6;
@@ -27,16 +31,4 @@ button:disabled {
 
 body, html {
     height: 100%;
-}
-
-.bg {
-    background-image: url("/images/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
-    @media (max-width: 550px) {
-        height: 100%;
-      }
 }
