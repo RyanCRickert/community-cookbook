@@ -44,10 +44,23 @@
   width: 75%;
 }
 
+.text-input__ingredient-edit {
+  border: 1px solid #cacccd;
+  font-size: $font-size-small;
+  height: 3.7rem;
+  padding: 0.7rem;
+  width: 70%;
+
+  @media(min-width: $desktop-breakpoint) {
+    width: 83%;
+  }
+}
+
 .text-input__button {
   background: rgb(29, 80, 29);
   height: 50px;
   font-size: 1.5rem;
+  user-select: none;
   width:25%;
 
   @media (min-width: $desktop-breakpoint) {

@@ -1,7 +1,9 @@
 import React from "react";
 import moment from "moment";
 import { Link } from "react-router-dom";
+import update from "react-addons-update";
 import IngredientListItem from "./IngredientListItem";
+
 
 export default class RecipeForm extends React.Component {
 	constructor(props) {
@@ -17,6 +19,8 @@ export default class RecipeForm extends React.Component {
 			createdAt: props.recipe ? moment(props.recipe.createdAt) : moment(),
 			error: ""
 		}
+
+		
 	}
 
 	onNameChange = (e) => {
@@ -53,10 +57,14 @@ export default class RecipeForm extends React.Component {
     }
   };
 
-	handleRemoveIngredient = (ingredientToRemove) => {
-		this.setState((prevState) => ({
-			ingredients: prevState.ingredients.filter((ingredient) => ingredientToRemove !== ingredient)
-		}));
+	handleRemoveIngredient = (ingredientToRemove, poop) => {
+		let ingredients = this.state.ingredients;
+		const index = ingredients.indexOf(ingredientToRemove);
+
+		if (index > -1) {
+			ingredients.splice(index, 1);
+			this.setState({ ingredients });
+		}
 	};
 
 	handleAddIngredient = (e) => {
@@ -78,10 +86,18 @@ export default class RecipeForm extends React.Component {
 			this.setState((prevState) => ({ ingredients: prevState.ingredients.concat(ingredient) }));
 			this.setState({ error: "" });
 		}
-
-
 	};
 
+	handleEditIngredient = (ingredientToUpdate, update) => {
+		let ingredients = this.state.ingredients;
+		const index = ingredients.indexOf(ingredientToUpdate);
+
+		if(index > -1) {
+			ingredients[index] = update;
+			this.setState({ ingredients })
+		}
+	};
+	
 	onSubmit = (e) => {
 		e.preventDefault();
 
@@ -89,11 +105,13 @@ export default class RecipeForm extends React.Component {
 			this.setState(() => ({ error: "Please enter a name." }));
 		} else if (!this.state.ingredients) {
 			this.setState(() => ({ error: "Please enter at least one ingredient." }));
-		}  else if (!this.state.cookTime) {
+		} else if (!this.state.cookTime) {
 			this.setState(() => ({ error: "Please verify the cook time." }));
-		}  else if (!this.state.feeds) {
+		} else if (!this.state.feeds) {
 			this.setState(() => ({ error: "Please verify the feeds number." }));
-		} else {
+		} else if (!this.state.category) {
+			this.setState(() => ({ error: "Please select a category." }));
+		}	else {
 			this.setState(() => ({ error: "" }));
 			this.props.onSubmit({
 				name: this.state.name,
@@ -178,6 +196,7 @@ export default class RecipeForm extends React.Component {
 							key={ingredient}
 							name={ingredient}
 							handleRemoveIngredient={this.handleRemoveIngredient}
+							handleEditIngredient={this.handleEditIngredient}
 						/>
 					)
 					)}

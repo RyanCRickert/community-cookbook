@@ -37,6 +37,19 @@
   word-break: break-all;
 }
 
+.modal-intro {
+  background: $dark-gray;
+  color: $off-white;
+  max-width: 60rem;
+  outline: none;
+  padding: $m-size;
+  text-align: center;
+}
+
+.modal-intro__body {
+  margin-bottom: $l-size;
+}
+
 .modal-remove {
   background: $dark-gray;
   color: $off-white;
@@ -49,10 +62,6 @@
 .modal-remove__header {
   margin-top: 0;
   text-align: center;
-}
-
-.modal-remove__body {
-
 }
 
 .no-margin {

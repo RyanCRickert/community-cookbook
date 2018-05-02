@@ -29,7 +29,6 @@ export default class PostForm extends React.Component {
 				ariaHideApp={false}
 				onRequestClose={this.props.handleCloseModal}
 				isOpen={!!this.props.modalOpen}
-				contentLabel="Login"
 				closeTimeoutMS={200}
 				className="modal-remove"
 			>

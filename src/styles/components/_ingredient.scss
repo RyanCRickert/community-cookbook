@@ -7,14 +7,59 @@
   justify-content: space-between;
 }
 
+.ingredient-item__buttons {
+  div:nth-child(n+1) {
+      float: left;
+  }
+}
+
 .ingredient-item__left {
+  font-size: 1.4rem;
   padding: 0.5rem;
+  
+
+  @media(min-width: $desktop-breakpoint) {
+    font-size: 1.6rem;
+    width: 90%;
+  }
+}
+
+.ingredient-item__no-pad {
+  font-size: 1.4rem;
+  margin: 0;
+  
+
+  @media(min-width: $desktop-breakpoint) {
+    font-size: 1.6rem;
+  }
 }
 
 .ingredient-item__right {
   background: darken(beige, 20%);
-  color: darken($gray, 20%);
   border: 1px solid black;
+  color: darken($gray, 20%);
   cursor: pointer;
+  float: right;
+  font-weight: 700;
+  height: 3.7rem;
   padding: 0.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.ingredient-item__button {
+  background: darken(beige, 20%);
+  border: 1px solid black;
+  color: darken($gray, 20%);
+  cursor: pointer;
+  float: right;
+  font-weight: 700;
+  height: 3.7rem;
+  padding: 0.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.ingredient-item__form {
+  display: inline;
 }

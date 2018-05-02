@@ -8,8 +8,8 @@ export default class PostForm extends React.Component {
 		super(props);
 
 		this.state = {
-			email: "",
-			password: ""
+			email: "tester@test.com",
+			password: "master"
       
 		}
 	}

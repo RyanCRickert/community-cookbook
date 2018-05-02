@@ -41,7 +41,7 @@ export class Header extends React.Component {
       <header className="header">
         <div className="content-container">
           <div className="header-main">
-            <h1 className="header-title">Community Cookbook</h1>
+            <h1 className="header-title" onClick={this.props.openWelcomeModal}>Community Cookbook</h1>
             <h3 className="header-subtitle">A place for sharing</h3>
           </div>
             {this.state.loggedIn ?
