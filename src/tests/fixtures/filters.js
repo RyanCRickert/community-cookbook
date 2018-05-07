@@ -1,17 +1,11 @@
-import moment from "moment";
-
 const filters = {
-  text: "",
-  sortBy: "date",
-  startDate: undefined,
-  endDate: undefined
+  name: "",
+  sortBy: "date"
 }
 
 const altFilters = {
-  text: "bills",
-  sortBy: "amount",
-  startDate: moment(0),
-  endDate: moment(0).add(3, "days")
+  name: "chicken",
+  sortBy: "feeds"
 }
 
 export { filters, altFilters };

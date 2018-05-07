@@ -16,7 +16,12 @@
 }
 
 .list-item {
-  background: beige;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-item__view {
+  background: rgba($color: beige, $alpha: 0.8);
   border: 1px solid darken($off-white, 10%);
   border-top: none;
   color: $dark-gray;
@@ -25,6 +30,8 @@
   padding: $s-size;
   text-decoration: none;
   transition: background 0.3s ease;
+  user-select: none;
+  width: 100%;
   &:hover {
     background: darken(beige, 15%);
   }
@@ -48,8 +55,13 @@
 }
 
 .list-item__title {
+  font-size: 1em;
   margin: 0;
   word-break: break-all;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 1.17em;
+  }
 }
 
 .list-item__sub-title {
@@ -67,10 +79,18 @@
 }
 
 .list-item__data {
-  margin: $s-size 0 0 0;
+  margin: 0;
 
   @media (min-width: $desktop-breakpoint) {
-    margin: 0;
     padding-left: $s-size;
   }
+}
+
+.list-item__edit {
+  @extend .list-item__view;
+  cursor: pointer;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RecipeListItem correctly 1`] = `
+<Link
+  className="list-item"
+  replace={false}
+  to="/view/0"
+>
+  <div>
+    <h3
+      className="list-item__title"
+    >
+      Baked Chicken
+    </h3>
+    <span
+      className="list-item__sub-title"
+    >
+      Category: 
+      Chicken
+    </span>
+  </div>
+  <div>
+    <h3
+      className="list-item__data show-for-larger"
+    >
+      45
+       
+      minutes
+    </h3>
+    <span
+      className="list-item__sub-title-right"
+    >
+      Feeds: 
+      4
+    </span>
+    <h3
+      className="list-item__data show-for-mobile"
+    >
+      Cooking time: 
+      45
+       
+      minutes
+    </h3>
+  </div>
+</Link>
+`;

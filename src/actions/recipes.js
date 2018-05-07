@@ -1,4 +1,3 @@
-import uuid from "uuid";
 import database from "../firebase/firebase";
 
 export const addRecipe = (recipe) => ({

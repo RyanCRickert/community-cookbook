@@ -44,6 +44,17 @@ module.exports = (env) => {
                         }
                     }
                 ]
+                },
+                {
+                    test: /\.(jpg|gif|ico|png)$/,
+                    use: [
+                        {
+                        loader: 'url-loader',
+                        options: {
+                            name: '[path][name]-[hash:8].[ext]'
+                        }  
+                        }
+                    ]
                 }
             ]
         },

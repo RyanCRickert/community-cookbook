@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render IngredientListItem correctly 1`] = `
+<div>
+  <div
+    className="ingredient-item"
+  >
+    <div
+      className="ingredient-item__left"
+    />
+    <div
+      className="ingredient-item__right"
+      onClick={[Function]}
+    >
+      Edit
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,761 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle name change 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle name change 2`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by cook time 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by cook time 2`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by feeds 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by feeds 2`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by name 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should handle sort by name 2`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value="chicken"
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="feeds"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render RecipeListFilters correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="date"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render RecipeListFilters with alt data correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__search"
+    >
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Search recipes"
+        type="text"
+        value="chicken"
+      />
+    </div>
+    <div
+      className="input-group__category"
+    >
+      <select
+        className="category"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          All
+        </option>
+        <option>
+          Beef
+        </option>
+        <option>
+          Chicken
+        </option>
+        <option>
+          Meatless
+        </option>
+        <option>
+          Other
+        </option>
+        <option>
+          Pork
+        </option>
+      </select>
+    </div>
+    <div
+      className="input-group__select"
+    >
+      <select
+        className="select"
+        onChange={[Function]}
+        value="feeds"
+      >
+        <option
+          value="cookTime"
+        >
+          Cook Time
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="feeds"
+        >
+          Feeds
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;

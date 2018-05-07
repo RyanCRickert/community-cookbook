@@ -5,6 +5,12 @@ export const login = (uid) => ({
   uid
 });
 
+export const startGoogleLogin = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(googleAuthProvider);
+  };
+};
+
 export const startLogin = () => {
   return () => {
     return firebase.auth().signInWithPopup(googleAuthProvider);

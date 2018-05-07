@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render WelcomeModal correctly 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal-intro"
+  closeTimeoutMS={200}
+  isOpen={false}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <div>
+    <h1>
+      Hello and Welcome
+    </h1>
+    <div
+      className="modal-intro__body"
+    >
+      Just a quick word of advice for a first time visitor.  If you would like to create an account, please feel free to do so.  Initial accounts will only have the privileges of editing their own personal shopping list.  To request the ability to add or edit recipes, please contact me.  I have allowed anyone to view the process if they wish.
+    </div>
+    <button
+      className="button"
+    >
+      Close
+    </button>
+  </div>
+</Modal>
+`;

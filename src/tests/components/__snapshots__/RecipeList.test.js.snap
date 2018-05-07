@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseList with empty message 1`] = `
+exports[`should render RecipeList with empty message 1`] = `
 <div
   className="content-container"
 >
@@ -10,17 +10,17 @@ exports[`should render ExpenseList with empty message 1`] = `
     <div
       className="show-for-mobile"
     >
-      Expenses
+      Recipes
     </div>
     <div
       className="show-for-larger"
     >
-      Expense
+      Recipe
     </div>
     <div
       className="show-for-larger"
     >
-      Amount
+      Cooking Time
     </div>
   </div>
   <div
@@ -30,14 +30,14 @@ exports[`should render ExpenseList with empty message 1`] = `
       className="list-item list-item--message"
     >
       <span>
-        No expenses
+        No recipes found
       </span>
     </div>
   </div>
 </div>
 `;
 
-exports[`should render ExpenseList with expenses 1`] = `
+exports[`should render RecipeList with recipes 1`] = `
 <div
   className="content-container"
 >
@@ -47,45 +47,69 @@ exports[`should render ExpenseList with expenses 1`] = `
     <div
       className="show-for-mobile"
     >
-      Expenses
+      Recipes
     </div>
     <div
       className="show-for-larger"
     >
-      Expense
+      Recipe
     </div>
     <div
       className="show-for-larger"
     >
-      Amount
+      Cooking Time
     </div>
   </div>
   <div
     className="list-body"
   >
-    <Component
-      amount={195}
+    <RecipeListItem
+      category="Chicken"
+      cookTime={45}
       createdAt={0}
-      description="Gum"
+      feeds={4}
       id="0"
+      ingredients={
+        Array [
+          "chicken",
+          "spices",
+        ]
+      }
+      instructions="Place into over at 350F"
       key="0"
-      note=""
+      name="Baked Chicken"
     />
-    <Component
-      amount={110000}
+    <RecipeListItem
+      category="Beef"
+      cookTime={30}
       createdAt={-345600000}
-      description="Rent"
+      feeds={2}
       id="1"
+      ingredients={
+        Array [
+          "steak",
+          "pepper",
+        ]
+      }
+      instructions="Use a grill"
       key="1"
-      note=""
+      name="Steak"
     />
-    <Component
-      amount={4500}
+    <RecipeListItem
+      category="Chicken"
+      cookTime={60}
       createdAt={345600000}
-      description="Credit Card"
+      feeds={4}
       id="2"
+      ingredients={
+        Array [
+          "chicken",
+          "bread",
+        ]
+      }
+      instructions="Deep fry chicken"
       key="2"
-      note=""
+      name="Chicken Sandwich"
     />
   </div>
 </div>

@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle editRecipe 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Edit"
+      onSubmit={[Function]}
+      recipe={
+        Object {
+          "category": "Chicken",
+          "cookTime": 45,
+          "createdAt": 0,
+          "feeds": 4,
+          "id": "0",
+          "ingredients": Array [
+            "chicken",
+            "spices",
+          ],
+          "instructions": "Place into over at 350F",
+          "name": "Baked Chicken",
+        }
+      }
+    />
+    <button
+      className="button button--secondary"
+      onClick={[Function]}
+    >
+      Remove Recipe
+    </button>
+    <PostForm
+      handleCloseModal={[Function]}
+      modalOpen={false}
+      onRemove={[Function]}
+      recipeName="Baked Chicken"
+    />
+  </div>
+</div>
+`;
+
+exports[`should handle editRecipe 2`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Edit"
+      onSubmit={[Function]}
+      recipe={
+        Object {
+          "category": "Chicken",
+          "cookTime": 45,
+          "createdAt": 0,
+          "feeds": 4,
+          "id": "0",
+          "ingredients": Array [
+            "chicken",
+            "spices",
+          ],
+          "instructions": "Place into over at 350F",
+          "name": "Baked Chicken",
+        }
+      }
+    />
+    <button
+      className="button button--secondary"
+      onClick={[Function]}
+    >
+      Remove Recipe
+    </button>
+    <PostForm
+      handleCloseModal={[Function]}
+      modalOpen={false}
+      onRemove={[Function]}
+      recipeName="Baked Chicken"
+    />
+  </div>
+</div>
+`;
+
+exports[`should render a snapshot 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Edit"
+      onSubmit={[Function]}
+      recipe={
+        Object {
+          "category": "Chicken",
+          "cookTime": 45,
+          "createdAt": 0,
+          "feeds": 4,
+          "id": "0",
+          "ingredients": Array [
+            "chicken",
+            "spices",
+          ],
+          "instructions": "Place into over at 350F",
+          "name": "Baked Chicken",
+        }
+      }
+    />
+    <button
+      className="button button--secondary"
+      onClick={[Function]}
+    >
+      Remove Recipe
+    </button>
+    <PostForm
+      handleCloseModal={[Function]}
+      modalOpen={false}
+      onRemove={[Function]}
+      recipeName="Baked Chicken"
+    />
+  </div>
+</div>
+`;

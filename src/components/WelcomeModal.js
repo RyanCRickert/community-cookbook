@@ -19,9 +19,9 @@ export default class PostForm extends React.Component {
 				<div>
 					<h1>Hello and Welcome</h1>
 					<div className="modal-intro__body">
-						Just a quick word of advice for a first time visitor.  I have provided a dummy account (tester@test.com//master) 
-						for users who do not have their own account.  This account cannot write to the database but allows anyone to see how the account system works.  
-						You can also reopen this modal by clicking "Community Cookbook".  Thanks for stopping by.
+						Just a quick word of advice for a first time visitor.  If you would like to create an account, please feel free to do so.  Initial accounts will only 
+						have the privileges of editing their own personal shopping list.  To request the ability to add or edit recipes, please contact me.  I have allowed anyone to view 
+						the process if they wish.
 					</div>
 					<button className="button" onClick={this.props.closeWelcomeModal}>Close</button>
 				</div>

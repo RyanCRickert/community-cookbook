@@ -1,0 +1,1807 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call onSubmit prop for valid form submission 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value="Baked Chicken"
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={45}
+      />
+       
+      minutes
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={4}
+      />
+       
+      people
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value="Chicken"
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="chicken"
+    name="chicken"
+  />
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="spices"
+    name="spices"
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value="Place into over at 350F"
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should call onSubmit prop for valid form submission 2`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value="Baked Chicken"
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={45}
+      />
+       
+      minutes
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={4}
+      />
+       
+      people
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value="Chicken"
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="chicken"
+    name="chicken"
+  />
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="spices"
+    name="spices"
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value="Place into over at 350F"
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should not set cook time on invalid input 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should not set cook time on invalid input 2`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={20}
+      />
+       
+      minutes
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should render error for invalid recipe submission 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should render error for invalid recipe submission 2`] = `
+<div
+  className="form-edit"
+>
+  <p
+    className="form__error"
+  >
+    Please enter a name.
+  </p>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should render recipe form correctly 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should render recipe form with recipe data 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value="Baked Chicken"
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={45}
+      />
+       
+      minutes
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={4}
+      />
+       
+      people
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value="Chicken"
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="chicken"
+    name="chicken"
+  />
+  <IngredientListItem
+    handleEditIngredient={[Function]}
+    handleRemoveIngredient={[Function]}
+    key="spices"
+    name="spices"
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value="Place into over at 350F"
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set cook time if valid input 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set cook time if valid input 2`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={2}
+      />
+       
+      minutes
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set instruction on textarea change 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set instruction on textarea change 2`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value="New instruction"
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set name on input change 1`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value=""
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;
+
+exports[`should set name on input change 2`] = `
+<div
+  className="form-edit"
+>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Name of Dish"
+    type="text"
+    value="New name"
+  />
+  <div
+    className="number-input"
+  >
+    <div>
+      Cook Time :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      minute
+    </div>
+    <div>
+      Feeds :
+      <input
+        className="number-input__item"
+        min={1}
+        onChange={[Function]}
+        type="number"
+        value={1}
+      />
+       
+      person
+    </div>
+    <div>
+      Category :
+      <select
+        className="number-input__item-category"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={null}
+        />
+        <option
+          value="Beef"
+        >
+          Beef
+        </option>
+        <option
+          value="Chicken"
+        >
+          Chicken
+        </option>
+        <option
+          value="Meatless"
+        >
+          Meatless
+        </option>
+        <option
+          value="Other"
+        >
+          Other
+        </option>
+        <option
+          value="Pork"
+        >
+          Pork
+        </option>
+      </select>
+    </div>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="text-input__ingredient"
+      name="ingredient"
+      placeholder="Add Ingredient"
+      type="text"
+    />
+    <button
+      className="button text-input__button"
+    >
+      Add Ingredient
+    </button>
+  </form>
+  <p
+    style={
+      Object {
+        "marginTop": "0",
+      }
+    }
+  >
+    *Please add at least one ingredient*
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="text-area"
+      onChange={[Function]}
+      placeholder="Cooking instructions"
+      value=""
+    />
+    <div>
+      <button
+        className="button"
+      >
+         Recipe
+      </button>
+    </div>
+  </form>
+  <Link
+    className="button home-button"
+    replace={false}
+    to="/"
+  >
+    Home
+  </Link>
+</div>
+`;

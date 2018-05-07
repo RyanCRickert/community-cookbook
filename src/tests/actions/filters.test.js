@@ -1,48 +1,39 @@
 import moment from "moment";
-import { setStartDate, setEndDate, setTextFilter, sortByAmount, sortByDate } from "../../actions/filters";
+import { setNameFilter, setCategoryFilter, sortByName, sortByCookTime, sortByFeeds } from "../../actions/filters";
 
-test("should generate set start date action object", () => {
-  const action = setStartDate(moment(0));
+test("should generate set name filter for provided name", () => {
+  const action = setNameFilter("test");
   expect(action).toEqual({
-    type: "SET_START_DATE",
-    startDate: moment(0)
+    type: "SET_NAME_FILTER",
+    name: "test"
   });
 });
 
-test("should generate set end date action object", () => {
-  const action = setEndDate(moment(0));
+test("should generate set category filter for provided category", () => {
+  const action = setCategoryFilter("test");
   expect(action).toEqual({
-    type: "SET_END_DATE",
-    endDate: moment(0)
+    type: "SET_CATEGORY_FILTER",
+    category: "test"
   });
 });
 
-test("should generate set text filter for provided text", () => {
-  const action = setTextFilter("test");
+test("should generate action object for sort by name", () => {
+  const action = sortByName();
   expect(action).toEqual({
-    type: "SET_TEXT_FILTER",
-    text: "test"
-  });
-});
-
-test("should generate set text filter for no text", () => {
-  const action = setTextFilter();
-  expect(action).toEqual({
-    type: "SET_TEXT_FILTER",
-    text: ""
+    type: "SORT_BY_NAME"
   })
 });
 
-test("should generate action object for sort by amount", () => {
-  const action = sortByAmount();
+test("should generate action object for sort by feeds", () => {
+  const action = sortByFeeds();
   expect(action).toEqual({
-    type: "SORT_BY_AMOUNT"
+    type: "SORT_BY_FEEDS"
   })
 });
 
-test("should generate action object for sort by date", () => {
-  const action = sortByDate();
+test("should generate action object for sort by cook time", () => {
+  const action = sortByCookTime();
   expect(action).toEqual({
-    type: "SORT_BY_DATE"
+    type: "SORT_BY_COOKTIME"
   })
 });

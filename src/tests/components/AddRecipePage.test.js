@@ -1,29 +1,29 @@
 import React from "react";
 import { shallow } from "enzyme";
 import toJSON from "enzyme-to-json";
-import { AddExpensePage } from "../../components/AddExpensePage";
-import expenses from "../fixtures/expenses";
+import { AddRecipePage } from "../../components/AddRecipePage";
+import recipes from "../fixtures/recipes";
 
-let startAddExpense, history, wrapper;
+let startAddRecipe, history, wrapper;
 
 beforeEach(() => {
-  startAddExpense = jest.fn();
+  startAddRecipe = jest.fn();
   history = { push: jest.fn() };
-  wrapper = shallow(<AddExpensePage
+  wrapper = shallow(<AddRecipePage
     buttonType={"Add"}
-    startAddExpense={startAddExpense}
+    startAddRecipe={startAddRecipe}
     history={history}
     />);
 });
 
-test("should render AddExpensePage correctly", () => {
+test("should render AddRecipePage correctly", () => {
   expect(toJSON(wrapper)).toMatchSnapshot();
 });
 
 test("should handle onSubmit", () => {
   expect(toJSON(wrapper)).toMatchSnapshot();
-  wrapper.find("ExpenseForm").prop("onSubmit")(expenses[1]);
+  wrapper.find("RecipeForm").prop("onSubmit")(recipes[1]);
   expect(history.push).toHaveBeenLastCalledWith("/");
-  expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
+  expect(startAddRecipe).toHaveBeenLastCalledWith(recipes[1]);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });

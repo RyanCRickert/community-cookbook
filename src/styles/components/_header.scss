@@ -3,10 +3,11 @@
 }
 
 .header-button {
-  margin: 2.7rem 0 0 2rem;
+  margin: 2.7rem 0 2.7rem 2rem;
 
-  @media(max-width: 600px) {
-    font-size: 1.8rem;
+  @media(max-width: $desktop-breakpoint) {
+    font-size: 1.5rem;
+    font-weight: bolder;
     margin: 0;
     padding: 0.8rem;
   }
@@ -17,8 +18,9 @@
   display: inline-block;
   height: 100px;
 
-  @media(max-width: 600px) {
+  @media(max-width: $desktop-breakpoint) {
     height: 75px;
+    width: 61%;
   }
 }
 
@@ -27,7 +29,7 @@
   font-family: "Lobster", cursive;
   margin: 0;
 
-  @media(max-width: 600px) {
+  @media(max-width: $desktop-breakpoint) {
     font-size: 2.5rem;
   }
 }
@@ -36,29 +38,100 @@
   float: left;
   margin: 0 0 2rem 2rem;
 
-  @media(max-width: 600px) {
+  @media(max-width: $desktop-breakpoint) {
     font-size: 1.8rem;
   }
 }
 
 .header-log {
-  float: right;
+  float: left;
 
-  @media(max-width: 600px) {
+  @media(max-width: $desktop-breakpoint) {
     display: flex;
     flex-direction: column;
+    float: left;
   }
 
   button {
-    @media(max-width: 600px) {
-      margin-top: 0.7rem;
+    @media(max-width: $desktop-breakpoint) {
+      margin-top: 1.2rem;
     }
+  
+  a {
+    padding-top: 2rem;
   }
 
+  div > button {
+    @media(max-width: $desktop-breakpoint) {
+      width: 67%;
+    }
+  }
+}
+
   .header-button__login {
-    @media(max-width: 600px) {
+    @media(max-width: $desktop-breakpoint) {
       margin-top: 2.05rem;
       width: 11.3rem;
     }
+  }
+}
+
+.fa-shopping-cart:before {
+  cursor: pointer;
+  font-size: 3.5em;
+  padding-left: 2rem;
+
+  @media(max-width: $desktop-breakpoint) {
+    font-size: 2em;
+    padding-left: 0;
+    top: 0;
+  }
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media(max-width: $desktop-breakpoint) {
+    display: block;
+    max-width: 20rem;
+    width: 39%;
+
+    div {
+      float: right;
+    }
+
+  }
+}
+
+.header-fa {
+  color: $off-white;
+  margin: 2.2rem 0;
+
+  &:hover {
+    color: $gray;
+  }
+
+  @media(max-width: $desktop-breakpoint) {
+    height: 31px;
+    margin: 0;
+  }
+}
+
+.header-log__fa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media(max-width: $desktop-breakpoint) {
+    margin-top: 1.3rem;
+    width: 10rem;
   }
 }

@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call startLogin on button click 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Login"
+  isOpen={false}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <div>
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <input
+        autoFocus={true}
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Email"
+        type="text"
+        value=""
+      />
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Password"
+        type="password"
+        value=""
+      />
+      <div
+        className="modal-button"
+      >
+        <div
+          className="modal-button__group"
+        >
+          <button
+            className="button"
+          >
+            Sign In
+          </button>
+          <button
+            className="button"
+            onClick={[Function]}
+          >
+            New User
+          </button>
+        </div>
+        <div
+          className="modal-google"
+          onClick={[Function]}
+        >
+          Google Login
+        </div>
+      </div>
+    </form>
+    <div>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</Modal>
+`;
+
+exports[`should render LoginModal correctly 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Login"
+  isOpen={false}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <div>
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <input
+        autoFocus={true}
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Email"
+        type="text"
+        value=""
+      />
+      <input
+        className="text-input"
+        onChange={[Function]}
+        placeholder="Password"
+        type="password"
+        value=""
+      />
+      <div
+        className="modal-button"
+      >
+        <div
+          className="modal-button__group"
+        >
+          <button
+            className="button"
+          >
+            Sign In
+          </button>
+          <button
+            className="button"
+            onClick={[Function]}
+          >
+            New User
+          </button>
+        </div>
+        <div
+          className="modal-google"
+          onClick={[Function]}
+        >
+          Google Login
+        </div>
+      </div>
+    </form>
+    <div>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</Modal>
+`;

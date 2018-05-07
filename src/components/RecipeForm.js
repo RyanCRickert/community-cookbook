@@ -1,7 +1,6 @@
 import React from "react";
 import moment from "moment";
 import { Link } from "react-router-dom";
-import update from "react-addons-update";
 import IngredientListItem from "./IngredientListItem";
 
 
@@ -57,7 +56,7 @@ export default class RecipeForm extends React.Component {
     }
   };
 
-	handleRemoveIngredient = (ingredientToRemove, poop) => {
+	handleRemoveIngredient = (ingredientToRemove) => {
 		let ingredients = this.state.ingredients;
 		const index = ingredients.indexOf(ingredientToRemove);
 

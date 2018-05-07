@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle onSubmit 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Add Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Add"
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`should handle onSubmit 2`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Add Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Add"
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`should render AddRecipePage correctly 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Add Recipe
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <RecipeForm
+      actionType="Add"
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;

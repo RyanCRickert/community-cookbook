@@ -4,47 +4,27 @@ import moment from "moment";
 test("should setup default filter values", () => {
   const state = filtersReducers(undefined, { type: "@@INIT" });
   expect(state).toEqual({
-    text: "",
-    sortBy: "date",
-    startDate: moment().startOf("month"),
-    endDate: moment().endOf("month")
+    name: "",
+    category: "",
+    sortBy: "name"
   });
 })
 
-test("should set sortBy to amount", () => {
-  const state = filtersReducers(undefined, { type: "SORT_BY_AMOUNT" });
-  expect(state.sortBy).toBe("amount");
+test("should set sortBy to feeds", () => {
+  const state = filtersReducers(undefined, { type: "SORT_BY_FEEDS" });
+  expect(state.sortBy).toBe("feeds");
 });
 
-test("should set sortBy to date", () => {
-  const currentState = {
-    text: "",
-    sortBy: "amount",
-    startDate: undefined,
-    endDate: undefined
-  };
-  const action = { type: "SORT_BY_DATE" };
-  const state = filtersReducers(currentState, action);
-  expect(state.sortBy).toBe("date");
-});
-
-test("should set text filter", () => {
-  const text = "This is my test"
-  const action = { type: "SET_TEXT_FILTER", text };
+test("should set name filter", () => {
+  const name = "Beef stew"
+  const action = { type: "SET_NAME_FILTER", name };
   const state = filtersReducers(undefined, action);
-  expect(state.text).toBe(text);
+  expect(state.name).toBe(name);
 });
 
-test("should set startDate filter", () => {
-  const startDate = moment();
-  const action = { type: "SET_START_DATE", startDate };
+test("should set category filter", () => {
+  const category = "Other"
+  const action = { type: "SET_CATEGORY_FILTER", category };
   const state = filtersReducers(undefined, action);
-  expect(state.startDate).toBe(startDate);
-});
-
-test("should set endDate filter", () => {
-  const endDate = moment();
-  const action = { type: "SET_END_DATE", endDate };
-  const state = filtersReducers(undefined, action);
-  expect(state.endDate).toBe(endDate);
+  expect(state.category).toBe(category);
 });

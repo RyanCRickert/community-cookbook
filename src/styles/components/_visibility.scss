@@ -1,11 +1,15 @@
 .show-for-mobile {
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: 400;
   @media (min-width: $desktop-breakpoint) {
     display: none;
   }
 }
 
 .show-for-larger {
-  @media (max-width: $desktop-breakpoint - 0.1rem) {
+  margin-right: 7rem;
+  @media (max-width: $desktop-breakpoint - 1px) {
     display: none;
   }
 }
