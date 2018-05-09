@@ -8,7 +8,9 @@ export class ViewRecipePageLogged extends React.Component {
   handleClick(ingredient, index) {
 
     this.refs[index].setAttribute("disabled", "disabled");
-    this.props.startAddItem(ingredient);
+    this.props.startAddItem({
+      name: ingredient
+    });
   }
 
   render() {

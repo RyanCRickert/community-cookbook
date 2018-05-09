@@ -10,7 +10,7 @@ export class ShoppingCartPage extends React.Component {
 		super(props);
 
 		this.state = {
-			shop: this.props.items.map(item => item.node_ ? item.node_.value_ : item.itemData)
+			shop: this.props.items.map(item => item.name)
     }
   }
   
@@ -24,6 +24,7 @@ export class ShoppingCartPage extends React.Component {
   }
 
   render() {
+    console.log(this.props.items)
     return (
       <div>
         <div className="page-header">

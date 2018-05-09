@@ -5,13 +5,17 @@ export const addItem = (item) => ({
   item
 });
 
-export const startAddItem = (itemData = "") => {
+export const startAddItem = (itemData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
-
-    return database.ref(`users/${uid}/shoppingCart`).push(itemData).then((ref) => {
+    const {
+      name = ""
+    } = itemData;
+    const item = { name }
+    return database.ref(`users/${uid}/shoppingCart`).push(item).then((ref) => {
       dispatch(addItem({
-        itemData
+        id: ref.key,
+        ...item
       }));
     });
   };
@@ -47,7 +51,7 @@ export const startSetItems = () => {
       snapshot.forEach((childSnapshot) => {
         items.push({
           id: childSnapshot.key,
-          ...childSnapshot
+          ...childSnapshot.val()
         });
       });
       dispatch(setItems(items));
