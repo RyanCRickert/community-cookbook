@@ -36,6 +36,20 @@ export const startRemoveItem = ({ id }) => {
   };
 };
 
+export const removeItemAll = () => ({
+  type: "REMOVE_ITEM_ALL",
+});
+
+export const startRemoveItemAll = () => {
+  return (dispatch, getState) => {
+    const uid = getState().auth.uid;
+
+    return database.ref(`users/${uid}/shoppingCart`).remove().then(() => {
+      dispatch(removeItemAll());
+    });
+  };
+};
+
 export const setItems = (items) => ({
   type: "SET_ITEMS",
   items

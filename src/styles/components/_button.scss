@@ -36,3 +36,11 @@
   max-width: 10.6rem;
   margin: 0 auto;
 }
+
+.button-small {
+  @extend .button;
+
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
+  padding: 0.6rem;
+}

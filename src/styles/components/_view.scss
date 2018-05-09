@@ -29,3 +29,11 @@
 .view-page__plus:disabled {
   background: url("/images/check.png");
 }
+
+.view-page-even {
+  background: rgba($color: beige, $alpha: 0.8);
+  color: $gray;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 2rem;
+}

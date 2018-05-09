@@ -5,15 +5,43 @@ import { startAddItem } from "../actions/shoppingCart";
 import database from "../firebase/firebase";
 
 export class ViewRecipePageLogged extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      addedItem: false,
+      itemNumber: 0
+    }
+    
+    this.handleAddAll = this.handleAddAll.bind(this);
+  }
+
   handleClick(ingredient, index) {
 
+    this.setState({
+      addedItem: true,
+      itemNumber: this.state.itemNumber + 1});
     this.refs[index].setAttribute("disabled", "disabled");
     this.props.startAddItem({
       name: ingredient
     });
   }
 
+  handleAddAll() {
+    this.props.recipe.ingredients.forEach((ingredient, index) => {
+      this.refs[index].setAttribute("disabled", "disabled");
+      this.props.startAddItem({
+        name: ingredient
+      });
+    });
+    this.setState({
+      addedItem: true,
+      itemNumber: 2
+    });
+  }
+
   render() {
+    console.log(this.state.itemNumber)
     return (
       <div>
         <div className="page-header">
@@ -36,6 +64,11 @@ export class ViewRecipePageLogged extends React.Component {
                 </div>
               ))}
               </span>
+              <button
+                onClick={this.handleAddAll}
+                className="button-small"
+                disabled={this.state.addedItem}>{!this.state.addedItem ? "Add All" : this.state.itemNumber >= 2 ? "Items have been added" : "Item has been added"}
+              </button>
             </div>
             <div>
               <h3>Cooking Directions</h3>

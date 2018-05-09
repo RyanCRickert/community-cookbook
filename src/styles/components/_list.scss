@@ -46,12 +46,10 @@
 
 .list-item--message {
   align-items: center;
+  background: rgba($color: beige, $alpha: 0.8);
   color: $gray;
   justify-content: center;
   padding: $m-size;
-  &:hover{
-    background: beige;
-  }
 }
 
 .list-item__title {

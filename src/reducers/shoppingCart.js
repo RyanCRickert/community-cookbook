@@ -9,6 +9,8 @@ export default (state = shoppingCartReducerDefaultState, action) => {
            ]
         case "REMOVE_ITEM":
            return state.filter(({ id }) => id !== action.id);
+        case "REMOVE_ITEM_ALL":
+           return [];
         case "SET_ITEMS":
            return action.items;
         default:
