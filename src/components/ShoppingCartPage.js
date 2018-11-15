@@ -32,7 +32,6 @@ export class ShoppingCartPage extends React.Component {
   };
 
   render() {
-    console.log(this.props.items)
     return (
       <div>
         <div className="page-header">

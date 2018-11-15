@@ -38,3 +38,5 @@ firebase.auth().onAuthStateChanged((user) => {
 		renderApp();
 	}
 });
+
+//Change for push
